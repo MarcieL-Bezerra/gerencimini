@@ -1,0 +1,188 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #f0f2f5; /* Cor de fundo suave */
+    font-family: Arial, sans-serif;
+    color: #333; /* Cor do texto */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para o header */
+.header {
+    background-color: #007BFF; /* Cor de fundo do header */
+    padding: 20px;
+    text-align: center;
+}
+/* Estilo para o submenu */
+.header .nav-item {
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+.header .nav-item a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.header .submenu {
+    display: none;
+    position: absolute;
+    background-color: #007BFF; /* Cor de fundo do submenu */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 100%;
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para o centro do item pai */
+    z-index: 1;
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.header .submenu li {
+    color: white;
+    display: block;
+}
+
+.header .submenu li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.header .submenu li a:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.header .nav-item:hover .submenu {
+    display: block;
+}
+
+/* Ajuste para garantir que o submenu não sobreponha outros elementos */
+.header .nav-list {
+    color: white;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.header .nav-item.active > a {
+    font-weight: bold;
+    color: #ffc107; /* Cor de destaque para o item ativo */
+}
+/* Estilo para o footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40; /* Cor de fundo do footer */
+    color: white;
+}
+
+.footer h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer .signature {
+    font-size: smaller;
+    color: #868e96; /* Cor mais clara para a assinatura */
+}
+
+.footer .footer-image {
+    width: 50px; /* ajuste conforme necessário */
+    height: auto;
+    margin-left: 10px;
+    border-radius: 50%; /* Deixa a imagem mais arredondada */
+}
+
+/* Estilo para o conteúdo principal */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex: 1; /* Ocupa o espaço restante */
+}
+
+.center-logo {
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%; /* Deixa a imagem mais arredondada */
+}
+
+/* Estilo para o formulário */
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: white; /* Cor de fundo do formulário */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #007BFF; /* Cor do botão */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+/* Estilo para a tabela de produtos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF; /* Cor de fundo do cabeçalho da tabela */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo das linhas pares */
+}
+
+tr:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse sobre uma linha */
+}
+
